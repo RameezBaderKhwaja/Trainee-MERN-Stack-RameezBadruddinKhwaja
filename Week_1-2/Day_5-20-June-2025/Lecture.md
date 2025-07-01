@@ -1,4 +1,4 @@
-#### What is Git?
+### What is Git?
 
 * A distributed version control system (DVCS) created in 2005 by Linus Torvalds 
 * Tracks files, stores full project history locally, and supports offline work 
