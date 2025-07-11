@@ -10,7 +10,7 @@ Folder structure includes `src/`, `public/`, `App.js`, and `index.js`.
 
 ## Creating a React Application
 
-You start the app with Create React App and render the `App` component in `index.js`.
+start the app with Create React App and render the `App` component in `index.js`.
 
 ## Components & Templates
 
