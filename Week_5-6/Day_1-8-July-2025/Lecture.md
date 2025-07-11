@@ -1,26 +1,25 @@
-
 # Vite
 
 - Vite is a fast tool to create frontend apps.
 - It supports React, Vue, Svelte, and more.
 - It uses **esbuild** for speed and **Rollup** for production builds.
 
-### Why use Vite?
+# Why use Vite?
 - Traditional tools like Webpack are slow on big apps.
 - Vite starts fast and reloads quickly when you change code.
 
-### How it works
+# How it works
 - Pre-bundles libraries with esbuild.
 - Loads only needed code using browser ES modules.
 - Uses Rollup to bundle for production.
 
-### Key Features
+# Key Features
 - Multi-page apps and library mode.
 - Fast CSS loading and code splitting.
 - Supports TypeScript, Sass, Less.
 - Works well in mono repo.
 
-### Create Project
+# Create Project
 
 ```bash
 npm create vite@latest
@@ -29,7 +28,7 @@ npm install
 npm run dev
 ```
 
-### Build and Preview
+# Build and Preview
 
 ```bash
 npm run build
@@ -43,7 +42,7 @@ npm run preview
 - NPM stands for Node Package Manager.
 - It helps install JavaScript libraries like React, Bootstrap, etc.
 
-### Setup
+# Setup
 - Comes with Node.js.
 - Check version:
 
@@ -51,7 +50,7 @@ npm run preview
 npm -v
 ```
 
-### Create package.json
+# Create package.json
 
 ```bash
 npm init
@@ -59,38 +58,38 @@ npm init
 npm init -y
 ```
 
-### Install Packages
+# Install Packages
 
 ```bash
 npm install package-name --save
 npm install lodash@4.17.3 --save
 ```
 
-### Dev Dependencies
+# Dev Dependencies
 
 ```bash
 npm install gulp --save-dev
 ```
 
-### Uninstall Packages
+# Uninstall Packages
 
 ```bash
 npm uninstall package-name
 ```
 
-### Install All Packages (from package.json)
+# Install All Packages (from package.json)
 
 ```bash
 npm install
 ```
 
-### Global Packages
+# Global Packages
 
 ```bash
 npm install nodemon -g
 ```
 
-### Scripts
+# Scripts
 
 ```json
 "scripts": {
@@ -109,7 +108,7 @@ npm start
 - React is a JavaScript library to build UI.
 - Made by Facebook, it uses components and JSX.
 
-### Create App with Vite
+# Create App with Vite
 
 ```bash
 npm create vite@latest
@@ -119,7 +118,7 @@ npm install
 npm run dev
 ```
 
-### Component Example
+# Component Example
 
 ```tsx
 function Message() {
@@ -128,7 +127,7 @@ function Message() {
 export default Message;
 ```
 
-### Props Example
+# Props Example
 
 ```tsx
 interface Props {
@@ -139,7 +138,7 @@ function Greet({ text }: Props) {
 }
 ```
 
-### useState Example
+# useState Example
 
 ```tsx
 const [count, setCount] = useState(0);
@@ -147,7 +146,7 @@ const [count, setCount] = useState(0);
 <button onClick={() => setCount(count + 1)}>{count}</button>
 ```
 
-### Event Handling
+# Event Handling
 
 ```tsx
 function handleClick() {
@@ -156,7 +155,7 @@ function handleClick() {
 <button onClick={handleClick}>Click me</button>
 ```
 
-### Children Prop
+# Children Prop
 
 ```tsx
 function Box({ children }: { children: React.ReactNode }) {

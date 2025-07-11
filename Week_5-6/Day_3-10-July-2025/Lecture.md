@@ -1,4 +1,4 @@
-## 1. Lifecycle of Reactive Effects
+# Lifecycle of Reactive Effects
 
 - Effects in React run after rendering and can clean up before next run.
 - Useful for syncing with external systems (e.g., APIs, subscriptions).
@@ -7,7 +7,7 @@
 - Use event handlers for actions triggered by user.
 - Always include all dependencies used inside the effect.
 
-## 2. Rendering Lists and Keys
+# Rendering Lists and Keys
 
 - Use `.map()` to render arrays:
   ```js
@@ -18,19 +18,19 @@
 * Avoid using array indexes or random values as keys.
 * `key` helps React track, add, remove, or reorder items efficiently.
 
-## 3. Core Hooks Summary
+# Core Hooks Summary
 
-### useState
+# useState
 
 * For state management in components.
 * Returns `[value, setValue]`.
 
-### useEffect
+# useEffect
 
 * Runs after render.
 * Use for side effects like fetching data or subscribing to services.
 
-### useMemo
+# useMemo
 
 * Caches expensive calculations.
 
@@ -38,7 +38,7 @@
   const result = useMemo(() => expensiveFn(a, b), [a, b]);
   ```
 
-### useCallback
+# useCallback
 
 * Caches function references to prevent unnecessary re-renders.
 
@@ -46,12 +46,12 @@
   const handleClick = useCallback(() => { ... }, [deps]);
   ```
 
-### useRef
+# useRef
 
 * Stores mutable value that doesn't trigger re-render.
 * Commonly used for DOM refs or timers.
 
-## 4. Reusing Logic with Custom Hooks
+# Reusing Logic with Custom Hooks
 
 * Custom hooks start with `use` and use other hooks inside.
 * Example:
@@ -75,16 +75,16 @@
 * Custom hooks improve reusability and keep components clean.
 * Use when logic is reused or separated from rendering.
 
-## 5. React Router v6
+# React Router v6
 
-### Setup
+# Setup
 
 * Install: `npm add react-router-dom@6`
 * Wrap app in `<BrowserRouter>`
 * Use `<Routes>` instead of `<Switch>`
 * Use `element` prop in `<Route>`
 
-### Navigation
+# Navigation
 
 * Use `<Link>` or `<NavLink>` to navigate.
 * Use `useNavigate()` for programmatic navigation.
@@ -94,17 +94,17 @@
   navigate("/home", { state: { user: "test" } });
   ```
 
-### Redirection
+# Redirection
 
 * Use `<Navigate to="/path" />`
 * Add `replace` for history overwrite
 
-### Nested Routes
+# Nested Routes
 
 * Use nested `<Route>` inside a parent `<Route>`
 * Use `<Outlet />` in parent to render child content
 
-### URL Params and State
+# URL Params and State
 
 * Use `:id` in path to define dynamic segments
 * Get params with `useParams()`
