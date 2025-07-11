@@ -1,5 +1,4 @@
 # Introduction
-What you’ll learn: React basics and how to set up a project.
 
 ```bash
 npx create-react-app my-app
